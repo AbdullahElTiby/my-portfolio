@@ -44,7 +44,17 @@ const botAudioMap = {
         'steps.projects': 'en-steps-projects.wav',
         'steps.contact': 'en-steps-contact.wav'
     },
-    tr: {},
+    tr: {
+        awake: 'tr-awake.mp3',
+        startIntro: 'tr-startIntro.mp3',
+        paused: 'tr-pausedIntro.mp3',
+        tourDone: 'tr-tourDone.mp3',
+        'steps.home': 'tr-steps-home.mp3',
+        'steps.about': 'tr-steps-about.mp3',
+        'steps.skills': 'tr-steps-skills-projects.mp3',
+        'steps.projects': 'tr-steps-skills-projects.mp3',
+        'steps.contact': 'tr-steps-contact.mp3'
+    },
     ar: {}
 };
 
