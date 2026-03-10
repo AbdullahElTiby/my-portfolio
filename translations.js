@@ -6,6 +6,7 @@ const translations = {
             about: "About",
             skills: "Skills",
             projects: "Projects",
+            certificates: "Certificates",
             contact: "Contact"
         },
         hero: {
@@ -82,6 +83,14 @@ const translations = {
                 features: ["Product catalog", "Shopping cart", "Product details", "Responsive design", "E-commerce functionality"]
             }
         },
+        certificates: {
+            title: "Certificates",
+            view: "View Certificate",
+            cs50x: {
+                title: "CS50x",
+                description: "Harvard University - Introduction to Computer Science"
+            }
+        },
         contact: {
             title: "Get In Touch",
             description: "Have a project in mind or want to collaborate? Feel free to reach out! I'm always open to discussing new opportunities.",
@@ -136,6 +145,7 @@ const translations = {
             about: "Hakkımda",
             skills: "Yetenekler",
             projects: "Projeler",
+            certificates: "Sertifikalar",
             contact: "İletişim"
         },
         hero: {
@@ -212,6 +222,14 @@ const translations = {
                 features: ["Ürün kataloğu", "Alışveriş sepeti", "Ürün detayları", "Duyarlı tasarım", "E-ticaret işlevleri"]
             }
         },
+        certificates: {
+            title: "Sertifikalar",
+            view: "Sertifikayı Gör",
+            cs50x: {
+                title: "CS50x",
+                description: "Harvard University - Introduction to Computer Science"
+            }
+        },
         contact: {
             title: "İletişime Geç",
             description: "Aklında bir proje mi var veya işbirliği yapmak mı istiyorsun? Çekinmeden ulaşabilirsin! Yeni fırsatları görüşmeye her zaman açığım.",
@@ -266,6 +284,7 @@ const translations = {
             about: "نبذة عني",
             skills: "المهارات",
             projects: "المشاريع",
+            certificates: "الشهادات",
             contact: "تواصل"
         },
         hero: {
@@ -340,6 +359,14 @@ const translations = {
                 short: "متجر إلكتروني للهواتف",
                 description: "منصة تجارة إلكترونية كاملة لبيع الهواتف مع وظائف سلة التسوق وقوائم المنتجات وتجربة دفع حديثة.",
                 features: ["كتالوج المنتجات", "سلة التسوق", "تفاصيل المنتج", "تصميم متجاوب", "وظائف التجارة الإلكترونية"]
+            }
+        },
+        certificates: {
+            title: "الشهادات",
+            view: "عرض الشهادة",
+            cs50x: {
+                title: "CS50x",
+                description: "Harvard University - Introduction to Computer Science"
             }
         },
         contact: {
