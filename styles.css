@@ -1006,7 +1006,7 @@ body::after {
 /* ===== Social Media Section ===== */
 .social-media {
     padding: var(--section-padding);
-    background: rgba(35, 40, 60, 0.28);
+    background: rgba(72, 82, 110, 0.55);
 }
 
 .section-intro {
@@ -1018,49 +1018,26 @@ body::after {
     line-height: 1.8;
 }
 
-.social-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 24px;
+.social-projects-grid {
+    margin-top: 8px;
 }
 
-.social-card {
-    margin: 0;
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: var(--border-radius);
-    padding: 18px;
-    box-shadow: 0 16px 30px rgba(18, 20, 32, 0.3);
-    transition: var(--transition-normal);
-}
-
-.social-card:hover {
-    transform: translateY(-8px);
-    box-shadow: var(--shadow-glow);
-    border-color: var(--accent-primary);
-}
-
-.social-card-link {
+.social-image-link {
     display: block;
-    border-radius: 12px;
-    overflow: hidden;
     text-decoration: none;
-    border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .social-card-image {
     display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
+    height: 100%;
     object-fit: cover;
     background: linear-gradient(135deg, rgba(172, 186, 196, 0.18), rgba(48, 54, 79, 0.38));
+    transition: transform 0.5s ease;
 }
 
-.social-card figcaption {
-    margin-top: 14px;
-    color: var(--text-secondary);
-    font-size: 14px;
-    text-align: center;
+.social-project-card:hover .social-card-image {
+    transform: scale(1.04);
 }
 
 /* ===== Certificates Section ===== */

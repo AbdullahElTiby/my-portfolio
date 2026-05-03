@@ -87,10 +87,14 @@ const translations = {
         socialMedia: {
             title: "Social Media Creation",
             description: "A curated collection of branded posts, story visuals, and promotional creatives.",
+            view: "View Design",
             items: {
                 post1: "Instagram post design",
+                post1Desc: "Branded square creative built for clean, high-impact promotion.",
                 post2: "Story creative",
-                post3: "Campaign graphic"
+                post2Desc: "Vertical visual storytelling designed for quick attention and strong recall.",
+                post3: "Campaign graphic",
+                post3Desc: "Promotional artwork tailored for launches, offers, and audience engagement."
             }
         },
         certificates: {
@@ -240,10 +244,14 @@ const translations = {
         socialMedia: {
             title: "Sosyal Medya İçerikleri",
             description: "Markalı gönderiler, hikaye görselleri ve promosyon tasarımlarından oluşan seçkin bir koleksiyon.",
+            view: "Tasarımı Gör",
             items: {
                 post1: "Instagram gönderi tasarımı",
+                post1Desc: "Temiz ve etkili tanıtım için hazırlanmış markalı kare tasarım.",
                 post2: "Hikaye görseli",
-                post3: "Kampanya grafiği"
+                post2Desc: "Hızlı dikkat çekmek ve akılda kalmak için tasarlanmış dikey hikaye görseli.",
+                post3: "Kampanya grafiği",
+                post3Desc: "Lansmanlar, teklifler ve etkileşim için hazırlanmış promosyon tasarımı."
             }
         },
         certificates: {
@@ -393,10 +401,14 @@ const translations = {
         socialMedia: {
             title: "تصميمات وسائل التواصل",
             description: "مجموعة مختارة من المنشورات والعناصر البصرية القصصية والمواد الترويجية.",
+            view: "عرض التصميم",
             items: {
                 post1: "تصميم منشور إنستغرام",
+                post1Desc: "تصميم مربع بهوية علامة مخصص لترويج نظيف وقوي.",
                 post2: "تصميم قصة",
-                post3: "رسمة حملة"
+                post2Desc: "سرد بصري عمودي مصمم لجذب الانتباه بسرعة وترسيخ الذاكرة.",
+                post3: "رسمة حملة",
+                post3Desc: "تصميم ترويجي مناسب للإطلاقات والعروض وزيادة التفاعل."
             }
         },
         certificates: {
