@@ -1150,6 +1150,29 @@ body.theme-dark .compare-chip {
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+body.theme-night .compare-divider,
+body.theme-manual-dark .compare-divider,
+body.theme-dark .compare-divider {
+    border-left-color: #f0f0db;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+body.theme-night .compare-handle,
+body.theme-manual-dark .compare-handle,
+body.theme-dark .compare-handle {
+    background: #1a1a1a;
+    border-color: #f0f0db;
+}
+
+body.theme-night .compare-handle::before,
+body.theme-night .compare-handle::after,
+body.theme-manual-dark .compare-handle::before,
+body.theme-manual-dark .compare-handle::after,
+body.theme-dark .compare-handle::before,
+body.theme-dark .compare-handle::after {
+    border-color: #f0f0db;
+}
+
 .compare-slider {
     position: absolute;
     inset: 0;
