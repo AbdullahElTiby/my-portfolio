@@ -90,15 +90,17 @@ const translations = {
             view: "View Design",
             before: "Before",
             after: "After",
-            items: {
-                post1: "Pizza creative transformation",
-                post1Desc: "A raw food shot elevated into a warmer, more cinematic social media visual.",
+items: {
+                post1: "Creative transformation",
+                post1Desc: "A before and after showcasing the creative design process.",
                 post2: "Story creative",
                 post2Desc: "Vertical visual storytelling designed for quick attention and strong recall.",
                 post3: "Campaign graphic",
                 post3Desc: "Promotional artwork tailored for launches, offers, and audience engagement.",
-                post4: "Pizza video to poster transformation",
-                post4Desc: "A cinematic preparation clip transformed into a polished still built for social promotion."
+                post4: "Video reveal",
+                post4Desc: "A static design transformed into a dynamic video showcase for social media.",
+                post5: "Video showcase",
+                post5Desc: "A creative concept brought to life through motion and visual storytelling."
             }
         },
         certificates: {
@@ -251,15 +253,17 @@ const translations = {
             view: "Tasarımı Gör",
             before: "Önce",
             after: "Sonra",
-            items: {
-                post1: "Pizza kreatif dönüşümü",
-                post1Desc: "Ham bir yemek fotoğrafını daha sıcak ve sinematik bir sosyal medya görseline dönüştüren çalışma.",
+items: {
+                post1: "Kreatif dönüşüm",
+                post1Desc: "Kreatif tasarım sürecini gösteren bir önce/sonra çalışması.",
                 post2: "Hikaye görseli",
                 post2Desc: "Hızlı dikkat çekmek ve akılda kalmak için tasarlanmış dikey hikaye görseli.",
                 post3: "Kampanya grafiği",
                 post3Desc: "Lansmanlar, teklifler ve etkileşim için hazırlanmış promosyon tasarımı.",
-                post4: "Pizza videosundan afiş dönüşümü",
-                post4Desc: "Sosyal medya tanıtımı için sinematik hazırlık videosundan üretilmiş güçlü bir final görsel."
+                post4: "Video gösterimi",
+                post4Desc: "Statik bir tasarımın sosyal medya için dinamik video gösterisine dönüştürülmesi.",
+                post5: "Video vitrin",
+                post5Desc: "Hareket ve görsel hikayeleştirme ile hayata geçirilen kreatif bir konsept."
             }
         },
         certificates: {
@@ -412,15 +416,17 @@ const translations = {
             view: "عرض التصميم",
             before: "قبل",
             after: "بعد",
-            items: {
-                post1: "تحويل إبداعي للبيتزا",
-                post1Desc: "لقطة طعام خام تم تطويرها إلى مشهد أدفأ وأكثر سينمائية لوسائل التواصل.",
+items: {
+                post1: "تحويل إبداعي",
+                post1Desc: "عرض قبل وبعد يُبرز عملية التصميم الإبداعي.",
                 post2: "تصميم قصة",
                 post2Desc: "سرد بصري عمودي مصمم لجذب الانتباه بسرعة وترسيخ الذاكرة.",
                 post3: "رسمة حملة",
                 post3Desc: "تصميم ترويجي مناسب للإطلاقات والعروض وزيادة التفاعل.",
-                post4: "تحويل فيديو البيتزا إلى ملصق",
-                post4Desc: "مقطع تحضير سينمائي تم تحويله إلى صورة نهائية مصقولة للترويج على وسائل التواصل."
+                post4: "عرض فيديو",
+                post4Desc: "تصميم ثابت يتحول إلى عرض فيديو ديناميكي لوسائل التواصل.",
+                post5: "معرض فيديو",
+                post5Desc: "مفهوم إبداعي يتحقق من خلال الحركة والسرد البصري."
             }
         },
         certificates: {
