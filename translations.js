@@ -96,7 +96,9 @@ const translations = {
                 post2: "Story creative",
                 post2Desc: "Vertical visual storytelling designed for quick attention and strong recall.",
                 post3: "Campaign graphic",
-                post3Desc: "Promotional artwork tailored for launches, offers, and audience engagement."
+                post3Desc: "Promotional artwork tailored for launches, offers, and audience engagement.",
+                post4: "Pizza video to poster transformation",
+                post4Desc: "A cinematic preparation clip transformed into a polished still built for social promotion."
             }
         },
         certificates: {
@@ -255,7 +257,9 @@ const translations = {
                 post2: "Hikaye görseli",
                 post2Desc: "Hızlı dikkat çekmek ve akılda kalmak için tasarlanmış dikey hikaye görseli.",
                 post3: "Kampanya grafiği",
-                post3Desc: "Lansmanlar, teklifler ve etkileşim için hazırlanmış promosyon tasarımı."
+                post3Desc: "Lansmanlar, teklifler ve etkileşim için hazırlanmış promosyon tasarımı.",
+                post4: "Pizza videosundan afiş dönüşümü",
+                post4Desc: "Sosyal medya tanıtımı için sinematik hazırlık videosundan üretilmiş güçlü bir final görsel."
             }
         },
         certificates: {
@@ -414,7 +418,9 @@ const translations = {
                 post2: "تصميم قصة",
                 post2Desc: "سرد بصري عمودي مصمم لجذب الانتباه بسرعة وترسيخ الذاكرة.",
                 post3: "رسمة حملة",
-                post3Desc: "تصميم ترويجي مناسب للإطلاقات والعروض وزيادة التفاعل."
+                post3Desc: "تصميم ترويجي مناسب للإطلاقات والعروض وزيادة التفاعل.",
+                post4: "تحويل فيديو البيتزا إلى ملصق",
+                post4Desc: "مقطع تحضير سينمائي تم تحويله إلى صورة نهائية مصقولة للترويج على وسائل التواصل."
             }
         },
         certificates: {
