@@ -489,7 +489,7 @@ const projectsData = {
     2: {
         gradient: "linear-gradient(135deg, #e11d48 0%, #881337 100%)",
         tech: ["React", "Tailwind CSS", "Vite"],
-        demoUrl: "https://pasa-pizzeria.surge.sh/"
+        demoUrl: "https://pasapizzeria.com/"
     },
     3: {
         gradient: "linear-gradient(135deg, #6B4A2D 0%, #3A2415 100%)",
