@@ -1061,8 +1061,9 @@ body::after {
 .compare-after {
     position: absolute;
     inset: 0;
-    width: var(--compare-position);
+    width: 100%;
     overflow: hidden;
+    clip-path: inset(0 calc(100% - var(--compare-position)) 0 0);
 }
 
 .compare-after .compare-image {
