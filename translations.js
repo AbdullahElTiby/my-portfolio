@@ -6,6 +6,7 @@ const translations = {
             about: "About",
             skills: "Skills",
             projects: "Projects",
+            socialMedia: "Social Media",
             certificates: "Certificates",
             contact: "Contact"
         },
@@ -83,6 +84,15 @@ const translations = {
                 features: ["Product catalog", "Shopping cart", "Product details", "Responsive design", "E-commerce functionality"]
             }
         },
+        socialMedia: {
+            title: "Social Media Creation",
+            description: "A curated collection of branded posts, story visuals, and promotional creatives.",
+            items: {
+                post1: "Instagram post design",
+                post2: "Story creative",
+                post3: "Campaign graphic"
+            }
+        },
         certificates: {
             title: "Certificates",
             view: "View Certificate",
@@ -149,6 +159,7 @@ const translations = {
             about: "Hakkımda",
             skills: "Yetenekler",
             projects: "Projeler",
+            socialMedia: "Sosyal Medya",
             certificates: "Sertifikalar",
             contact: "İletişim"
         },
@@ -226,6 +237,15 @@ const translations = {
                 features: ["Ürün kataloğu", "Alışveriş sepeti", "Ürün detayları", "Duyarlı tasarım", "E-ticaret işlevleri"]
             }
         },
+        socialMedia: {
+            title: "Sosyal Medya İçerikleri",
+            description: "Markalı gönderiler, hikaye görselleri ve promosyon tasarımlarından oluşan seçkin bir koleksiyon.",
+            items: {
+                post1: "Instagram gönderi tasarımı",
+                post2: "Hikaye görseli",
+                post3: "Kampanya grafiği"
+            }
+        },
         certificates: {
             title: "Sertifikalar",
             view: "Sertifikayı Gör",
@@ -292,6 +312,7 @@ const translations = {
             about: "نبذة عني",
             skills: "المهارات",
             projects: "المشاريع",
+            socialMedia: "وسائل التواصل",
             certificates: "الشهادات",
             contact: "تواصل"
         },
@@ -367,6 +388,15 @@ const translations = {
                 short: "متجر إلكتروني للهواتف",
                 description: "منصة تجارة إلكترونية كاملة لبيع الهواتف مع وظائف سلة التسوق وقوائم المنتجات وتجربة دفع حديثة.",
                 features: ["كتالوج المنتجات", "سلة التسوق", "تفاصيل المنتج", "تصميم متجاوب", "وظائف التجارة الإلكترونية"]
+            }
+        },
+        socialMedia: {
+            title: "تصميمات وسائل التواصل",
+            description: "مجموعة مختارة من المنشورات والعناصر البصرية القصصية والمواد الترويجية.",
+            items: {
+                post1: "تصميم منشور إنستغرام",
+                post2: "تصميم قصة",
+                post3: "رسمة حملة"
             }
         },
         certificates: {

@@ -1003,6 +1003,66 @@ body::after {
     font-weight: 500;
 }
 
+/* ===== Social Media Section ===== */
+.social-media {
+    padding: var(--section-padding);
+    background: rgba(35, 40, 60, 0.28);
+}
+
+.section-intro {
+    max-width: 760px;
+    margin: 0 auto 32px;
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.social-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+}
+
+.social-card {
+    margin: 0;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: var(--border-radius);
+    padding: 18px;
+    box-shadow: 0 16px 30px rgba(18, 20, 32, 0.3);
+    transition: var(--transition-normal);
+}
+
+.social-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--accent-primary);
+}
+
+.social-card-link {
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.social-card-image {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    background: linear-gradient(135deg, rgba(172, 186, 196, 0.18), rgba(48, 54, 79, 0.38));
+}
+
+.social-card figcaption {
+    margin-top: 14px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    text-align: center;
+}
+
 /* ===== Certificates Section ===== */
 .certificates {
     padding: var(--section-padding);
