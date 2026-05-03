@@ -1022,6 +1022,16 @@ body::after {
     margin-top: 8px;
 }
 
+.social-project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-project-card .project-image {
+    height: auto;
+    aspect-ratio: 1 / 1;
+}
+
 .social-image-link {
     display: block;
     text-decoration: none;
@@ -1044,7 +1054,7 @@ body::after {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     background: #ffffff;
 }
 
