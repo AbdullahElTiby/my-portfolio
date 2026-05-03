@@ -1006,7 +1006,7 @@ body::after {
 /* ===== Social Media Section ===== */
 .social-media {
     padding: var(--section-padding);
-    background: rgba(72, 82, 110, 0.55);
+    background: rgba(57, 65, 91, 0.35);
 }
 
 .section-intro {
