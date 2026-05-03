@@ -91,8 +91,8 @@ const translations = {
             before: "Before",
             after: "After",
             items: {
-                post1: "Instagram post design",
-                post1Desc: "Branded square creative built for clean, high-impact promotion.",
+                post1: "Pizza creative transformation",
+                post1Desc: "A raw food shot elevated into a warmer, more cinematic social media visual.",
                 post2: "Story creative",
                 post2Desc: "Vertical visual storytelling designed for quick attention and strong recall.",
                 post3: "Campaign graphic",
@@ -250,8 +250,8 @@ const translations = {
             before: "Önce",
             after: "Sonra",
             items: {
-                post1: "Instagram gönderi tasarımı",
-                post1Desc: "Temiz ve etkili tanıtım için hazırlanmış markalı kare tasarım.",
+                post1: "Pizza kreatif dönüşümü",
+                post1Desc: "Ham bir yemek fotoğrafını daha sıcak ve sinematik bir sosyal medya görseline dönüştüren çalışma.",
                 post2: "Hikaye görseli",
                 post2Desc: "Hızlı dikkat çekmek ve akılda kalmak için tasarlanmış dikey hikaye görseli.",
                 post3: "Kampanya grafiği",
@@ -409,8 +409,8 @@ const translations = {
             before: "قبل",
             after: "بعد",
             items: {
-                post1: "تصميم منشور إنستغرام",
-                post1Desc: "تصميم مربع بهوية علامة مخصص لترويج نظيف وقوي.",
+                post1: "تحويل إبداعي للبيتزا",
+                post1Desc: "لقطة طعام خام تم تطويرها إلى مشهد أدفأ وأكثر سينمائية لوسائل التواصل.",
                 post2: "تصميم قصة",
                 post2Desc: "سرد بصري عمودي مصمم لجذب الانتباه بسرعة وترسيخ الذاكرة.",
                 post3: "رسمة حملة",
