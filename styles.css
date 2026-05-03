@@ -1987,7 +1987,7 @@ p, a, span, label, input, textarea, button { font-family: var(--font-body); }
 .btn-outline:hover { background: #FFC107 !important; color: #000 !important; transform: translate(4px, -4px) !important; box-shadow: -4px 4px 0 var(--c-fg) !important; }
 
 /* Sections */
-.hero, .about, .skills, .projects, .certificates, .contact, .footer {
+.hero, .about, .skills, .projects, .social-media, .certificates, .contact, .footer {
     background-color: var(--c-bg) !important;
     border-top: 4px solid var(--c-fg) !important;
     border-bottom: 4px solid var(--c-fg) !important;
