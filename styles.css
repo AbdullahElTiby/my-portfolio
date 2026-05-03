@@ -1142,6 +1142,14 @@ body::after {
     right: 14px;
 }
 
+body.theme-night .compare-chip,
+body.theme-manual-dark .compare-chip,
+body.theme-dark .compare-chip {
+    background: rgba(20, 20, 20, 0.92);
+    color: #f0f0db;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
 .compare-slider {
     position: absolute;
     inset: 0;
