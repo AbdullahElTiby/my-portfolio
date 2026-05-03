@@ -300,7 +300,7 @@ function initBeforeAfterComparisons() {
 // ===== Project Modal =====
 function initProjectModal() {
     if (!projectModal || !modalClose) return;
-    const projectCards = document.querySelectorAll('.project-card');
+    const projectCards = document.querySelectorAll('.project-card[data-project]');
 
     projectCards.forEach(card => {
         card.addEventListener('click', () => {
