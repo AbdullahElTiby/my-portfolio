@@ -1025,19 +1025,116 @@ body::after {
 .social-image-link {
     display: block;
     text-decoration: none;
+    position: relative;
+    height: 100%;
+    background: #ffffff;
 }
 
-.social-card-image {
+.compare-frame {
+    --compare-position: 50%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    cursor: ew-resize;
+}
+
+.compare-image {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background: linear-gradient(135deg, rgba(172, 186, 196, 0.18), rgba(48, 54, 79, 0.38));
-    transition: transform 0.5s ease;
+    background: #ffffff;
 }
 
-.social-project-card:hover .social-card-image {
-    transform: scale(1.04);
+.compare-after {
+    position: absolute;
+    inset: 0;
+    width: var(--compare-position);
+    overflow: hidden;
+}
+
+.compare-divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--compare-position);
+    width: 0;
+    border-left: 4px solid #ffffff;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+    transform: translateX(-2px);
+    pointer-events: none;
+}
+
+.compare-handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 42px;
+    height: 42px;
+    background: #ffffff;
+    border: 3px solid var(--card-border);
+    border-radius: 999px;
+    transform: translate(-50%, -50%);
+}
+
+.compare-handle::before,
+.compare-handle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid var(--card-border);
+}
+
+.compare-handle::before {
+    left: 9px;
+    border-left: 2px solid var(--card-border);
+    transform: translateY(-50%) rotate(-45deg);
+}
+
+.compare-handle::after {
+    right: 9px;
+    border-right: 2px solid var(--card-border);
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.compare-chip {
+    position: absolute;
+    top: 14px;
+    z-index: 2;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--text-primary);
+    border: 2px solid var(--card-border);
+    font-family: var(--font-heading);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.compare-chip-before {
+    left: 14px;
+}
+
+.compare-chip-after {
+    right: 14px;
+}
+
+.compare-slider {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: ew-resize;
+}
+
+.social-open-btn {
+    margin-top: 18px;
 }
 
 /* ===== Certificates Section ===== */

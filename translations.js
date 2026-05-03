@@ -88,6 +88,8 @@ const translations = {
             title: "Social Media Creation",
             description: "A curated collection of branded posts, story visuals, and promotional creatives.",
             view: "View Design",
+            before: "Before",
+            after: "After",
             items: {
                 post1: "Instagram post design",
                 post1Desc: "Branded square creative built for clean, high-impact promotion.",
@@ -245,6 +247,8 @@ const translations = {
             title: "Sosyal Medya İçerikleri",
             description: "Markalı gönderiler, hikaye görselleri ve promosyon tasarımlarından oluşan seçkin bir koleksiyon.",
             view: "Tasarımı Gör",
+            before: "Önce",
+            after: "Sonra",
             items: {
                 post1: "Instagram gönderi tasarımı",
                 post1Desc: "Temiz ve etkili tanıtım için hazırlanmış markalı kare tasarım.",
@@ -402,6 +406,8 @@ const translations = {
             title: "تصميمات وسائل التواصل",
             description: "مجموعة مختارة من المنشورات والعناصر البصرية القصصية والمواد الترويجية.",
             view: "عرض التصميم",
+            before: "قبل",
+            after: "بعد",
             items: {
                 post1: "تصميم منشور إنستغرام",
                 post1Desc: "تصميم مربع بهوية علامة مخصص لترويج نظيف وقوي.",
