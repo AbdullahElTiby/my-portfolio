@@ -89,6 +89,10 @@ const translations = {
             cs50x: {
                 title: "CS50x",
                 description: "Harvard University - Introduction to Computer Science"
+            },
+            cyber: {
+                title: "Introduction to Cybersecurity",
+                description: "Cisco Networking Academy - Course Completion"
             }
         },
         contact: {
@@ -228,6 +232,10 @@ const translations = {
             cs50x: {
                 title: "CS50x",
                 description: "Harvard University - Introduction to Computer Science"
+            },
+            cyber: {
+                title: "Siber Güvenliğe Giriş",
+                description: "Cisco Networking Academy - Kurs Tamamlama"
             }
         },
         contact: {
@@ -367,6 +375,10 @@ const translations = {
             cs50x: {
                 title: "CS50x",
                 description: "Harvard University - Introduction to Computer Science"
+            },
+            cyber: {
+                title: "مقدمة في الأمن السيبراني",
+                description: "Cisco Networking Academy - إكمال الدورة"
             }
         },
         contact: {
