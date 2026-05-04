@@ -866,7 +866,7 @@ const projectsData = {
     7: {
         gradient: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
         tech: ["React", "E-commerce", "Shopping Cart"],
-        demoUrl: "http://phone-store-by-abdullaheltiby.surge.sh/"
+        demoUrl: "https://phone-store-by-abdullaheltiby.surge.sh/"
     }
 };
 
