@@ -42,7 +42,9 @@ const botAudioMap = {
         'steps.about': 'en-steps-about.wav',
         'steps.skills': 'en-steps-skills.wav',
         'steps.projects': 'en-steps-projects.wav',
-        'steps.contact': 'en-steps-contact.wav'
+        'steps.contact': 'en-steps-contact.wav',
+        'steps.social-media': 'en-steps-social-media.wav',
+        'steps.certificates': 'en-steps-certificates.wav'
     },
     tr: {
         awake: 'tr-awake.mp3',
@@ -53,13 +55,15 @@ const botAudioMap = {
         'steps.about': 'tr-steps-about.mp3',
         'steps.skills': 'tr-steps-skills-projects.mp3',
         'steps.projects': 'tr-steps-skills-projects.mp3',
-        'steps.contact': 'tr-steps-contact.mp3'
+        'steps.contact': 'tr-steps-contact.mp3',
+        'steps.social-media': 'tr-steps-social-media.mp3',
+        'steps.certificates': 'tr-steps-certificates.mp3'
     },
     ar: {}
 };
 
 const botState = {
-    steps: ['home', 'about', 'skills', 'projects', 'contact'],
+    steps: ['home', 'about', 'skills', 'projects', 'social-media', 'certificates', 'contact'],
     stepIndex: 0,
     tourTimer: null,
     tourActive: false,
@@ -940,7 +944,9 @@ function getGuideCardTargets(sectionId) {
         about: '#about .stat-card',
         skills: '#skills .skill-card',
         projects: '#projects .project-card',
-        contact: '#contact .contact-method, #contact .contact-form'
+        contact: '#contact .contact-method, #contact .contact-form',
+        'social-media': '#social-media .social-project-card',
+        certificates: '#certificates .certificate-card'
     };
     const selector = map[sectionId];
     if (!selector) return [];

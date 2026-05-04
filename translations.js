@@ -145,11 +145,13 @@ items: {
             unpin: "Auto Move",
             startIntro: "Welcome! I am your mini robot guide. Let us take a quick tour.",
             paused: "Tour paused because you interacted. Tap me to continue.",
-            steps: {
+steps: {
                 home: "Welcome. This is Abdullah's digital front door, where clients immediately understand his style and quality.",
                 about: "In this section, Abdullah introduces his engineering mindset and how he turns ideas into real products.",
                 skills: "Here you can see the technical stack Abdullah uses to build reliable and scalable solutions.",
                 projects: "These featured projects show real work, real outcomes, and the quality clients can expect.",
+                'social-media': "Here Abdullah showcases social media design work — before-and-after transformations, video creatives, and branded content.",
+                certificates: "Now you can view Abdullah's professional certifications, including coursework from Harvard and Cisco.",
                 contact: "This is the final step. If you like what you see, contact Abdullah here and start your project."
             },
             tourDone: "Tour complete. You can replay me anytime."
@@ -308,11 +310,13 @@ items: {
             unpin: "Oto Hareket",
             startIntro: "Hos geldin. Ben mini robot rehberinim. Kisa bir tur yapalim.",
             paused: "Etkilesim oldugu icin tur durdu. Devam icin bana dokun.",
-            steps: {
+steps: {
                 home: "Hos geldiniz. Burasi Abdullah'in dijital vitrini; musteri kaliteyi ilk bakista hisseder.",
                 about: "Bu bolumde Abdullah, muhendislik yaklasimini ve fikirleri nasil gercege donusturdugunu anlatir.",
                 skills: "Burada Abdullah'in guvenilir ve olceklenebilir cozumler icin kullandigi teknik yetkinlikleri gorursunuz.",
                 projects: "Bu projeler gercek calismalari ve musterinin bekleyebilecegi kalite seviyesini gosterir.",
+                'social-media': "Burada Abdullah sosyal medya tasarim calismalarini sergiliyor — once-sonra donusumleri, video kreatifleri ve markali icerikler.",
+                certificates: "Simdi Abdullah'in Harvard ve Cisco gibi kurumlardan aldigi profesyonel sertifikalarini gorebilirsiniz.",
                 contact: "Son adim burasi. Is birligi yapmak isterseniz Abdullah'a buradan hemen ulasabilirsiniz."
             },
             tourDone: "Tur tamamlandi. Istedigin zaman tekrar baslatabilirsin."
@@ -471,11 +475,13 @@ items: {
             unpin: "حركة تلقائية",
             startIntro: "أهلاً بك. أنا الروبوت المرشد. دعني أعرفك على عبدالله.",
             paused: "تم إيقاف الجولة مؤقتاً. اضغط عليّ للمتابعة.",
-            steps: {
+steps: {
                 home: "هذه الواجهة الرئيسية، وتعطي العميل انطباعاً سريعاً عن الجودة.",
                 about: "هنا يعرّفك عبدالله بخبرته وطريقة عمله في تطوير المنتجات.",
                 skills: "في هذا القسم ترى المهارات والتقنيات التي يعتمد عليها في التنفيذ.",
                 projects: "هنا مشاريع حقيقية توضح مستوى العمل والنتائج.",
+                'social-media': "هنا يعرض عبدالله أعمال تصميم وسائل التواصل — تحويلات قبل وبعد، فيديوهات إبداعية، ومحتوى علامات تجارية.",
+                certificates: "الآن يمكنك الاطلاع على شهادات عبدالله المهنية، بما في ذلك دورات من هارفارد وسيسكو.",
                 contact: "إذا أعجبك العمل، هذا هو قسم التواصل لبدء مشروعك."
             },
             tourDone: "انتهت الجولة. يمكنك إعادتها في أي وقت."
