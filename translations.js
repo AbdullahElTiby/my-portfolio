@@ -494,6 +494,340 @@ steps: {
             light: "فاتح",
             dark: "داكن"
         }
+    },
+    sq: {
+        nav: {
+            home: "Kreu",
+            about: "Rreth",
+            skills: "Aftësitë",
+            projects: "Projektet",
+            socialMedia: "Media Sociale",
+            certificates: "Certifikatat",
+            contact: "Kontakti"
+        },
+        hero: {
+            badge: "I disponueshëm për projekte",
+            greeting: "Përshëndetje, unë jam",
+            title: "Inxhinier Softueri",
+            description: "Duke krijuar zgjidhje elegante përmes kodit të pastër dhe mendimit inovativ.",
+            cta: {
+                projects: "Shiko Projektet",
+                contact: "Kontakto"
+            }
+        },
+        about: {
+            title: "Rreth Meje",
+            p1: "Jam një Inxhinier Softueri i pasionuar që krijon aplikacione efikase dhe të shkallëzueshme. Me një themel të fortë në teknologjitë moderne, transformoj idetë në realitet përmes kodit.",
+            p2: "Udhëtimi im në zhvillimin e softuerit më ka pajisur me ekspertizë si në frontend ashtu edhe në backend, duke më lejuar të ndërtoj zgjidhje të plota nga themeli.",
+            p3: "Kur nuk jam duke koduar, eksploroj teknologji të reja, kontribuoj në projekte open-source dhe ndjek tendencat më të fundit të industrisë.",
+            stats: {
+                experience: "Vite Eksperiencë",
+                projects: "Projekte të Kryera",
+                technologies: "Teknologji"
+            }
+        },
+        skills: {
+            title: "Aftësitë & Teknologjitë",
+            frontend: "Zhvillim Frontend",
+            backend: "Zhvillim Backend",
+            database: "Baza e të Dhënave",
+            tools: "Mjete & DevOps"
+        },
+        projects: {
+            title: "Projektet e Theksuara",
+            view: "Shiko Detajet",
+            project1: {
+                title: "Aethel Automation",
+                short: "Shërbime automatizimi të personalizuara me n8n",
+                description: "Faqe profesionale për automatizimin e proceseve të biznesit me n8n. Përfshin konsultim, raste studimi dhe integrim me chatbot Tawk.to.",
+                features: ["Automatizim me AI", "Chatbot Tawk.to", "Faqe shumëgjuhëshe", "Formular kontakti", "Raste studimore"]
+            },
+            project2: {
+                title: "Paşa Pizzeria",
+                short: "Platformë dixhitale për menu restoranti",
+                description: "Menu dixhitale shumëgjuhëshe për një zinxhir picash me përzgjedhje degësh, modalitet të errët dhe navigim të shpejtë.",
+                features: ["3 gjuhë", "Përzgjedhës degësh", "Modalitet i errët", "UI i personalizuar", "Vite"]
+            },
+            project3: {
+                title: "Hakkı Bey Cafe",
+                short: "Faqja e kafenesë tradicionale të Stambollit",
+                description: "Faqe elegante për një kafene tradicionale turke në Stamboll me menu, galeri dhe informacion kontakti.",
+                features: ["Dizajn elegant", "Galeri", "Sistem menuje", "Hartë", "Ikona Lucide"]
+            },
+            project4: {
+                title: "Book & Tea",
+                short: "Faqja e shtëpisë moderne të çajit",
+                description: "Faqe moderne për një shtëpi çaji me katalog librash, menu të gjerë dhe ambient të qetë për lexim.",
+                features: ["Dizajn letrar", "Menu gjithëpërfshirëse", "Rezervim online", "Galeri atmosfere", "Përgjegjshmëri e plotë"]
+            },
+            project5: {
+                title: "Flexy Medical",
+                short: "Faqja e shërbimeve mjekësore",
+                description: "Platformë e-commerce mjekësore me katalog produktesh, gjurmim porosish dhe mbështetje shumëgjuhëshe.",
+                features: ["Katalog produktesh", "Gjurmim porosish", "Shumëgjuhësh", "Dizajn i përgjegjshëm", "Faqe biznesi"]
+            },
+            project6: {
+                title: "BitChat",
+                short: "Platformë mesazhesh me AI",
+                description: "Platformë moderne mesazhesh e fuqizuar nga AI me biseda në kohë reale dhe dizajn të pastër.",
+                features: ["Integrim AI", "Bisedë në kohë reale", "Dizajn modern", "Mesazhe inteligjente", "React"]
+            },
+            project7: {
+                title: "Phone Store",
+                short: "Dyqan telefonash e-commerce",
+                description: "Dyqan online i plotë për telefona me karrocë blerjesh, katalog produktesh dhe përvojë të qetë blerjeje.",
+                features: ["E-commerce", "Karrocë blerjesh", "Katalog produktesh", "UI i personalizuar", "React"]
+            }
+        },
+        socialMedia: {
+            title: "Krijime për Media Sociale",
+            description: "Një koleksion i kuruar i postimeve të markuara, pamjeve të historive dhe krijimeve promocionale.",
+            view: "Shiko Dizajnin",
+            before: "Para",
+            after: "Pas",
+            items: {
+                post1: "Nga i Papërpunuar në Artizanal",
+                post1Desc: "Shndërrimi i një fotoje produkti të thjeshtë në një moment kinematik prapa skenave të kuzhinës.",
+                post2: "Nga Foto e Shpejtë në Editoriale",
+                post2Desc: "Ngritja e një fotoje të rastësishme telefoni në një editoriale profesionale ushqimore me dekor dhe ndriçim dramatik.",
+                post3: "Foto Ushqimore në Aksion",
+                post3Desc: "Shndërrimi i një fotografie të përditshme në një shkrepje dinamike që kap oreksin dhe lëvizjen.",
+                post4: "Nga Foto në Lëvizje",
+                post4Desc: "Gjallërimi i një fotografie statike ushqimore me një video të shkurtër shërbimi për angazhim në media sociale.",
+                post5: "Procesi në Lëvizje",
+                post5Desc: "Shndërrimi i një shkrepjeje statike përgatitore në një video të gjallë që tregon zanatin në aksion."
+            }
+        },
+        certificates: {
+            title: "Certifikatat",
+            view: "Shiko Certifikatën",
+            cs50x: {
+                title: "CS50x",
+                description: "Universiteti i Harvardit — Hyrje në Shkencat Kompjuterike"
+            },
+            cyber: {
+                title: "Hyrje në Sigurinë Kibernetike",
+                description: "Cisco Networking Academy — Përfundim Kursi"
+            }
+        },
+        contact: {
+            title: "Kontaktoni",
+            description: "Keni një projekt në mendje ose dëshironi të bashkëpunoni? Do të isha i lumtur të dëgjoja nga ju. Lini një mesazh dhe unë do t'ju përgjigjem sa më shpejt të jetë e mundur.",
+            email: "Email",
+            whatsapp: {
+                text: "Dërgo një mesazh"
+            },
+            form: {
+                name: "Emri Juaj",
+                email: "Email-i Juaj",
+                message: "Mesazhi Juaj",
+                submit: "Dërgo Mesazhin",
+                note: "Përgjigje tipike brenda 24 orëve."
+            }
+        },
+        modal: {
+            tech: "Teknologjitë e Përdorura",
+            features: "Veçoritë Kryesore",
+            demo: "Demo Live",
+            code: "Shiko Kodin"
+        },
+        bot: {
+            sleeping: "Është natë në Stamboll (00:00-07:00). Unë jam duke fjetur hehehe.",
+            awake: "Roboti në linjë. Prekni mua dhe do t'ju udhëzoj.",
+            replay: "Rifillo Turneun",
+            close: "Fshih Robotin",
+            voiceOn: "Zëri: Aktiv",
+            voiceOff: "Zëri: Joaktiv",
+            pin: "Blloko Pozicionin",
+            unpin: "Lëvizje Auto",
+            startIntro: "Mirë se vini! Unë jam roboti juaj udhëzues. Le të bëjmë një tur të shpejtë.",
+            paused: "Turneu u ndal sepse ju ndërvepruat. Prekni mua për të vazhduar.",
+            steps: {
+                home: "Mirë se vini. Kjo është dera dixhitale e Abdullah-ut, ku klientët kuptojnë menjëherë stilin dhe cilësinë e tij.",
+                about: "Këtu Abdullah prezanton mentalitetin e tij inxhinierik dhe mënyrën si i kthen idetë në produkte reale.",
+                skills: "Këtu shihni stekun teknik që Abdullah përdor për të ndërtuar zgjidhje të besueshme dhe të shkallëzueshme.",
+                projects: "Këto projekte të theksuara tregojnë punë reale, rezultate reale dhe cilësinë që klientët mund të presin.",
+                'social-media': "Këtu Abdullah shfaq punimet e dizajnit për media sociale — transformime para-pas, video kreative dhe përmbajtje të markuara.",
+                certificates: "Tani mund të shihni certifikatat profesionale të Abdullah-ut, përfshirë kurse nga Harvard dhe Cisco.",
+                contact: "Ky është hapi i fundit. Nëse ju pëlqen ajo që shihni, kontaktoni Abdullah-un këtu dhe filloni projektin tuaj."
+            },
+            tourDone: "Turneu përfundoi. Mund të më rifilloni kur të dëshironi."
+        },
+        footer: {
+            copyright: "© 2026 Abdullah ElTiby. Të gjitha të drejtat e rezervuara."
+        },
+        theme: {
+            auto: "Auto",
+            light: "E Çelur",
+            dark: "E Errët"
+        }
+    },
+    de: {
+        nav: {
+            home: "Start",
+            about: "Über mich",
+            skills: "Fähigkeiten",
+            projects: "Projekte",
+            socialMedia: "Social Media",
+            certificates: "Zertifikate",
+            contact: "Kontakt"
+        },
+        hero: {
+            badge: "Verfügbar für ausgewählte Projekte",
+            greeting: "Hallo, ich bin",
+            title: "Software-Ingenieur",
+            description: "Eleganz durch sauberen Code und innovatives Denken.",
+            cta: {
+                projects: "Projekte ansehen",
+                contact: "Kontakt aufnehmen"
+            }
+        },
+        about: {
+            title: "Über mich",
+            p1: "Ich bin ein leidenschaftlicher Software-Ingenieur mit Liebe zur Erstellung effizienter, skalierbarer Anwendungen. Mit fundierten Kenntnissen moderner Technologien verwandle ich Ideen durch Code in die Realität.",
+            p2: "Meine Reise in der Softwareentwicklung hat mich mit Expertise in Frontend- und Backend-Technologien ausgestattet, sodass ich vollständige Lösungen von Grund auf erstellen kann.",
+            p3: "Wenn ich nicht programmiere, erkunde ich gerne neue Technologien, trage zu Open-Source-Projekten bei und bleibe über die neuesten Branchentrends auf dem Laufenden.",
+            stats: {
+                experience: "Jahre Erfahrung",
+                projects: "Abgeschlossene Projekte",
+                technologies: "Technologien"
+            }
+        },
+        skills: {
+            title: "Fähigkeiten & Technologien",
+            frontend: "Frontend-Entwicklung",
+            backend: "Backend-Entwicklung",
+            database: "Datenbank",
+            tools: "Werkzeuge & DevOps"
+        },
+        projects: {
+            title: "Ausgewählte Projekte",
+            view: "Details ansehen",
+            project1: {
+                title: "Aethel Automation",
+                short: "Maßgeschneiderte n8n Workflow-Automatisierung",
+                description: "Professionelle Website für Geschäftsprozessautomatisierung mit n8n. Bietet Beratung, Fallstudien und Tawk.to Chatbot-Integration.",
+                features: ["KI-Automatisierung", "Tawk.to Chatbot", "Mehrsprachig", "Kontaktformular", "Fallstudien"]
+            },
+            project2: {
+                title: "Paşa Pizzeria",
+                short: "Digitale Speisekarten-Plattform",
+                description: "Mehrsprachige digitale Speisekarte für eine Pizzakette mit Filialauswahl, Dark Mode und schneller Navigation.",
+                features: ["3 Sprachen", "Filialauswahl", "Dark Mode", "Eigene UI", "Vite"]
+            },
+            project3: {
+                title: "Hakkı Bey Cafe",
+                short: "Traditionelle Istanbuler Café-Website",
+                description: "Elegante Website für ein traditionelles türkisches Café in Istanbul mit Speisekarte, Galerie und Kontakt.",
+                features: ["Elegantes Design", "Galerie", "Speisekarten-System", "Standortkarte", "Lucide Icons"]
+            },
+            project4: {
+                title: "Book & Tea",
+                short: "Moderne Teehaus-Website",
+                description: "Moderne Website für ein Teehaus mit Buchkatalog, umfangreicher Tee-Speisekarte und ruhiger Leseatmosphäre.",
+                features: ["Literarisches Design", "Umfangreiche Karte", "Online-Reservierung", "Atmosphäre-Galerie", "Voll responsiv"]
+            },
+            project5: {
+                title: "Flexy Medical",
+                short: "Medizinische Dienstleistungs-Website",
+                description: "Medizinische E-Commerce-Plattform mit Produktkatalog, Bestellverfolgung und mehrsprachiger Unterstützung.",
+                features: ["Produktkatalog", "Bestellverfolgung", "Mehrsprachig", "Responsives Design", "Business-Website"]
+            },
+            project6: {
+                title: "BitChat",
+                short: "KI-gestützte Messaging-Plattform",
+                description: "Moderne KI-gestützte Messaging-Plattform mit Echtzeit-Chat, intelligenten Funktionen und sauberem Design.",
+                features: ["KI-Integration", "Echtzeit-Chat", "Modernes Design", "Intelligente Nachrichten", "React"]
+            },
+            project7: {
+                title: "Phone Store",
+                short: "E-Commerce Handy-Shop",
+                description: "Vollständiger Online-Shop für Handys mit Warenkorb, Produktkatalog und reibungslosem Einkaufserlebnis.",
+                features: ["E-Commerce", "Warenkorb", "Produktkatalog", "Eigene UI", "React"]
+            }
+        },
+        socialMedia: {
+            title: "Social Media Kreationen",
+            description: "Eine kuratierte Sammlung von Markenbeiträgen, Story-Visuals und Werbekreativen.",
+            view: "Design ansehen",
+            before: "Vorher",
+            after: "Nachher",
+            items: {
+                post1: "Von Roh zu Handwerklich",
+                post1Desc: "Verwandlung einer einfachen Produktaufnahme in einen filmischen Blick hinter die Küchenkulissen.",
+                post2: "Vom Schnappschuss zum Editorial",
+                post2Desc: "Aufwertung eines Handyfotos zu einem professionell gestylten Food-Editorial mit Requisiten und dramatischer Beleuchtung.",
+                post3: "Action-Food-Aufnahme",
+                post3Desc: "Verwandlung eines Alltagsfotos in eine dynamische Käsezieher-Aufnahme, die Appetit und Bewegung einfängt.",
+                post4: "Vom Foto zur Bewegung",
+                post4Desc: "Erweckung eines statischen Essensfotos zum Leben mit einem kurzen Serviervideo für Social-Media-Engagement.",
+                post5: "Prozess in Bewegung",
+                post5Desc: "Verwandlung einer statischen Vorbereitungsaufnahme in ein lebendiges Video, das handwerkliches Können zeigt."
+            }
+        },
+        certificates: {
+            title: "Zertifikate",
+            view: "Zertifikat ansehen",
+            cs50x: {
+                title: "CS50x",
+                description: "Harvard University — Einführung in die Informatik"
+            },
+            cyber: {
+                title: "Einführung in Cybersicherheit",
+                description: "Cisco Networking Academy — Kursabschluss"
+            }
+        },
+        contact: {
+            title: "Kontakt aufnehmen",
+            description: "Haben Sie ein Projekt im Sinn oder möchten Sie zusammenarbeiten? Ich würde mich freuen, von Ihnen zu hören. Hinterlassen Sie eine Nachricht und ich werde mich so schnell wie möglich melden.",
+            email: "E-Mail",
+            whatsapp: {
+                text: "Nachricht senden"
+            },
+            form: {
+                name: "Ihr Name",
+                email: "Ihre E-Mail",
+                message: "Ihre Nachricht",
+                submit: "Nachricht senden",
+                note: "Typische Antwort innerhalb von 24 Stunden."
+            }
+        },
+        modal: {
+            tech: "Verwendete Technologien",
+            features: "Hauptfunktionen",
+            demo: "Live-Demo",
+            code: "Code ansehen"
+        },
+        bot: {
+            sleeping: "Es ist Nacht in Istanbul (00:00-07:00). Ich schlafe hehehe.",
+            awake: "Roboter online. Tippe mich an und ich führe dich herum.",
+            replay: "Tour wiederholen",
+            close: "Roboter ausblenden",
+            voiceOn: "Stimme: Ein",
+            voiceOff: "Stimme: Aus",
+            pin: "Position sperren",
+            unpin: "Auto-Bewegung",
+            startIntro: "Willkommen! Ich bin dein Mini-Roboter-Führer. Lass uns eine kurze Tour machen.",
+            paused: "Tour wegen Interaktion pausiert. Tippe mich an, um fortzufahren.",
+            steps: {
+                home: "Willkommen. Dies ist Abdullahs digitale Haustür, wo Kunden sofort seinen Stil und seine Qualität erkennen.",
+                about: "Hier stellt Abdullah seine technische Denkweise vor und wie er Ideen in echte Produkte umsetzt.",
+                skills: "Hier siehst du den technischen Stack, den Abdullah verwendet, um zuverlässige und skalierbare Lösungen zu bauen.",
+                projects: "Diese vorgestellten Projekte zeigen echte Arbeit, echte Ergebnisse und die Qualität, die Kunden erwarten können.",
+                'social-media': "Hier präsentiert Abdullah seine Social-Media-Designarbeiten — Vorher-Nachher-Transformationen, Video-Kreative und Markeninhalte.",
+                certificates: "Jetzt kannst du Abdullahs berufliche Zertifikate einsehen, einschließlich Kurse von Harvard und Cisco.",
+                contact: "Dies ist der letzte Schritt. Wenn dir gefällt, was du siehst, kontaktiere Abdullah hier und starte dein Projekt."
+            },
+            tourDone: "Tour abgeschlossen. Du kannst mich jederzeit wieder starten."
+        },
+        footer: {
+            copyright: "© 2026 Abdullah ElTiby. Alle Rechte vorbehalten."
+        },
+        theme: {
+            auto: "Auto",
+            light: "Hell",
+            dark: "Dunkel"
+        }
     }
 };
 

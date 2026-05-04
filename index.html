@@ -71,11 +71,21 @@
                         <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
                     </svg>
                 </button>
-                <button class="lang-toggle" id="langToggle">
-                    <span class="lang-active">EN</span>
-                    <span class="lang-divider">/</span>
-                    <span class="lang-inactive">TR</span>
-                </button>
+<div class="lang-picker" id="langPicker">
+                    <button class="lang-toggle" id="langToggle" aria-label="Select language">
+                        <span class="lang-active">EN</span>
+                        <svg class="lang-chevron" viewBox="0 0 24 24" width="12" height="12">
+                            <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option" data-lang="en" data-lang-label="English">English</button>
+                        <button class="lang-option" data-lang="tr" data-lang-label="Türkçe">Türkçe</button>
+                        <button class="lang-option" data-lang="ar" data-lang-label="العربية">العربية</button>
+                        <button class="lang-option" data-lang="sq" data-lang-label="Shqip">Shqip</button>
+                        <button class="lang-option" data-lang="de" data-lang-label="Deutsch">Deutsch</button>
+                    </div>
+                </div>
                 <button class="mobile-menu-btn" id="mobileMenuBtn">
                     <span></span>
                     <span></span>

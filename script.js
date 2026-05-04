@@ -1,5 +1,7 @@
 // ===== DOM Elements =====
 const langToggle = document.getElementById('langToggle');
+const langPicker = document.getElementById('langPicker');
+const langDropdown = document.getElementById('langDropdown');
 const mobileMenuBtn = document.getElementById('mobileMenuBtn');
 const mobileMenu = document.getElementById('mobileMenu');
 const projectModal = document.getElementById('projectModal');
@@ -18,7 +20,7 @@ const themeToggle = document.getElementById('themeToggle');
 
 // ===== State =====
 let currentLang = localStorage.getItem('lang') || 'en';
-const languageOrder = ['en', 'tr', 'ar'];
+const languageOrder = ['en', 'tr', 'ar', 'sq', 'de'];
 let istanbulIsNight = false;
 let themeMode = localStorage.getItem('themeMode') || 'auto';
 const themeOrder = ['auto', 'light', 'dark'];
@@ -59,7 +61,9 @@ const botAudioMap = {
         'steps.social-media': 'tr-steps-social-media.mp3',
         'steps.certificates': 'tr-steps-certificates.mp3'
     },
-    ar: {}
+    ar: {},
+    sq: {},
+    de: {}
 };
 
 const botState = {
@@ -108,16 +112,34 @@ function initLanguage() {
         currentLang = 'en';
     }
     updateLanguage(currentLang);
-    updateLangToggleUI();
+    updateLangPickerUI();
 
-    if (langToggle) {
-        langToggle.addEventListener('click', () => {
-            const idx = languageOrder.indexOf(currentLang);
-            const nextIdx = idx === -1 ? 0 : (idx + 1) % languageOrder.length;
-            currentLang = languageOrder[nextIdx];
-            localStorage.setItem('lang', currentLang);
-            updateLanguage(currentLang);
-            updateLangToggleUI();
+    if (langToggle && langDropdown) {
+        langToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const open = langDropdown.classList.toggle('active');
+            langPicker.classList.toggle('open', open);
+        });
+
+        langDropdown.querySelectorAll('.lang-option').forEach(btn => {
+            btn.addEventListener('click', () => {
+                const lang = btn.getAttribute('data-lang');
+                if (lang && translations[lang]) {
+                    currentLang = lang;
+                    localStorage.setItem('lang', currentLang);
+                    updateLanguage(currentLang);
+                    updateLangPickerUI();
+                    langDropdown.classList.remove('active');
+                    langPicker.classList.remove('open');
+                }
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!langPicker.contains(e.target)) {
+                langDropdown.classList.remove('active');
+                langPicker.classList.remove('open');
+            }
         });
     }
 }
@@ -144,16 +166,15 @@ function getNestedValue(obj, path) {
     return path.split('.').reduce((o, k) => (o && o[k] !== undefined) ? o[k] : null, obj);
 }
 
-function updateLangToggleUI() {
-    if (!langToggle) return;
+function updateLangPickerUI() {
+    if (!langToggle || !langDropdown) return;
     const active = langToggle.querySelector('.lang-active');
-    const inactive = langToggle.querySelector('.lang-inactive');
-    if (!active || !inactive) return;
+    if (active) active.textContent = currentLang.toUpperCase();
 
-    const idx = languageOrder.indexOf(currentLang);
-    const next = languageOrder[(idx + 1) % languageOrder.length];
-    active.textContent = currentLang.toUpperCase();
-    inactive.textContent = next.toUpperCase();
+    langDropdown.querySelectorAll('.lang-option').forEach(btn => {
+        const lang = btn.getAttribute('data-lang');
+        btn.classList.toggle('active', lang === currentLang);
+    });
 }
 
 // ===== Theme Toggle =====
@@ -970,6 +991,8 @@ function refreshBotLanguage() {
         botStatus.textContent =
             currentLang === 'tr' ? 'uyku' :
             currentLang === 'ar' ? 'نائم' :
+            currentLang === 'sq' ? 'në gjumë' :
+            currentLang === 'de' ? 'schlafend' :
             'sleeping';
         if (!botState.tourActive) showBotMessage(messages.sleeping, true, 'sleeping');
         updateBotVoiceButtonLabel();
@@ -980,6 +1003,8 @@ function refreshBotLanguage() {
     botStatus.textContent =
         currentLang === 'tr' ? 'aktif' :
         currentLang === 'ar' ? 'نشط' :
+        currentLang === 'sq' ? 'online' :
+        currentLang === 'de' ? 'online' :
         'online';
     if (!botState.tourActive) {
         const tourDone = localStorage.getItem('botTourCompleted') === '1';

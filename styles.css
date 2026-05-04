@@ -247,6 +247,10 @@ body::after {
     gap: 16px;
 }
 
+.lang-picker {
+    position: relative;
+}
+
 .lang-toggle {
     display: flex;
     align-items: center;
@@ -264,6 +268,60 @@ body::after {
 .lang-toggle:hover {
     border-color: var(--accent-primary);
     box-shadow: 0 0 20px rgba(172, 186, 196, 0.25);
+}
+
+.lang-active {
+    color: var(--text-primary);
+}
+
+.lang-chevron {
+    transition: transform 0.2s;
+    color: var(--text-muted);
+}
+
+.lang-picker.open .lang-chevron {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    overflow: hidden;
+    display: none;
+    z-index: 1000;
+    min-width: 160px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.lang-dropdown.active {
+    display: block;
+}
+
+.lang-option {
+    display: block;
+    width: 100%;
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+    transition: background 0.15s;
+}
+
+.lang-option:hover {
+    background: var(--bg-tertiary);
+}
+
+.lang-option.active {
+    background: var(--accent-primary);
+    color: #ffffff;
 }
 
 .theme-toggle {
@@ -315,14 +373,6 @@ body::after {
 
 .lang-active {
     color: var(--text-primary);
-}
-
-.lang-divider {
-    color: var(--text-muted);
-}
-
-.lang-inactive {
-    color: var(--text-muted);
 }
 
 .mobile-menu-btn {
