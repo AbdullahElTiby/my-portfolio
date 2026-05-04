@@ -91,16 +91,16 @@ const translations = {
             before: "Before",
             after: "After",
 items: {
-                post1: "Creative transformation",
-                post1Desc: "A before and after showcasing the creative design process.",
-                post2: "Story creative",
-                post2Desc: "Vertical visual storytelling designed for quick attention and strong recall.",
-                post3: "Campaign graphic",
-                post3Desc: "Promotional artwork tailored for launches, offers, and audience engagement.",
-                post4: "Video reveal",
-                post4Desc: "A static design transformed into a dynamic video showcase for social media.",
-                post5: "Video showcase",
-                post5Desc: "A creative concept brought to life through motion and visual storytelling."
+                post1: "Raw to Artisan",
+                post1Desc: "Transforming a simple uncooked product shot into a cinematic behind-the-scenes kitchen moment.",
+                post2: "Snapshot to Editorial",
+                post2Desc: "Elevating a casual phone photo into a professionally styled food editorial with props and dramatic lighting.",
+                post3: "Action Food Shot",
+                post3Desc: "Turning an everyday snapshot into a dynamic cheese pull shot that captures appetite and motion.",
+                post4: "Photo to Motion",
+                post4Desc: "Bringing a static food photograph to life with a short serving video for social engagement.",
+                post5: "Process in Motion",
+                post5Desc: "Transforming a still preparation shot into a living video that shows the artisan craft in action."
             }
         },
         certificates: {
@@ -254,16 +254,16 @@ items: {
             before: "Önce",
             after: "Sonra",
 items: {
-                post1: "Kreatif dönüşüm",
-                post1Desc: "Kreatif tasarım sürecini gösteren bir önce/sonra çalışması.",
-                post2: "Hikaye görseli",
-                post2Desc: "Hızlı dikkat çekmek ve akılda kalmak için tasarlanmış dikey hikaye görseli.",
-                post3: "Kampanya grafiği",
-                post3Desc: "Lansmanlar, teklifler ve etkileşim için hazırlanmış promosyon tasarımı.",
-                post4: "Video gösterimi",
-                post4Desc: "Statik bir tasarımın sosyal medya için dinamik video gösterisine dönüştürülmesi.",
-                post5: "Video vitrin",
-                post5Desc: "Hareket ve görsel hikayeleştirme ile hayata geçirilen kreatif bir konsept."
+                post1: "Hamdan Ustaya",
+                post1Desc: "Basit bir çiğ ürün fotoğrafını sinematik bir mutfak arkası anına dönüştürme.",
+                post2: "Anlık Fotoğraftan Editoryale",
+                post2Desc: "Sıradan bir telefon fotoğrafını, profesyonel stil ve dramatik aydınlatma ile bir yemek editoryaline yükseltme.",
+                post3: "Aksiyon Yemek Çekimi",
+                post3Desc: "Sıradan bir fotoğrafı, iştah ve hareketi yakalayan dinamik bir peynir çekimine dönüştürme.",
+                post4: "Fotoğraftan Videoya",
+                post4Desc: "Statik bir yemek fotoğrafını, sosyal medya etkileşimi için kısa bir servis videosuna dönüştürme.",
+                post5: "Hareket Halinde Süreç",
+                post5Desc: "Statik bir hazırlık fotoğrafını, zanaatkar işini gösteren canlı bir videoya dönüştürme."
             }
         },
         certificates: {
@@ -417,16 +417,16 @@ items: {
             before: "قبل",
             after: "بعد",
 items: {
-                post1: "تحويل إبداعي",
-                post1Desc: "عرض قبل وبعد يُبرز عملية التصميم الإبداعي.",
-                post2: "تصميم قصة",
-                post2Desc: "سرد بصري عمودي مصمم لجذب الانتباه بسرعة وترسيخ الذاكرة.",
-                post3: "رسمة حملة",
-                post3Desc: "تصميم ترويجي مناسب للإطلاقات والعروض وزيادة التفاعل.",
-                post4: "عرض فيديو",
-                post4Desc: "تصميم ثابت يتحول إلى عرض فيديو ديناميكي لوسائل التواصل.",
-                post5: "معرض فيديو",
-                post5Desc: "مفهوم إبداعي يتحقق من خلال الحركة والسرد البصري."
+                post1: "من الخام إلى الحرفي",
+                post1Desc: "تحويل لقطة منتج بسيطة إلى لحظة سينمائية خلف الكواليس في المطبخ.",
+                post2: "من لقطة عابرة إلى افتتاحية",
+                post2Desc: "رفع مستوى صورة هاتف عادية إلى افتتاحية طعام احترافية مع ديكورات وإضاءة درامية.",
+                post3: "لقطة طعام بالحركة",
+                post3Desc: "تحويل صورة يومية إلى لقطة جبن متموج ديناميكية تُظهر الشهية والحركة.",
+                post4: "من صورة إلى فيديو",
+                post4Desc: "إحياء صورة طعام ثابتة بفيديو قصير للتقديم يجذب التفاعل على وسائل التواصل.",
+                post5: "العملية في حركة",
+                post5Desc: "تحويل لقطة تحضير ثابتة إلى فيديو حي يُظهر الحرفية أثناء العمل."
             }
         },
         certificates: {
