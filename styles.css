@@ -1053,6 +1053,98 @@ body::after {
     font-weight: 500;
 }
 
+.github-projects-section {
+    margin-top: 56px;
+}
+
+.projects-subtitle {
+    margin-bottom: 12px;
+    font-family: var(--font-heading);
+    font-size: clamp(28px, 4vw, 40px);
+    text-align: center;
+}
+
+.github-projects-intro {
+    margin-bottom: 28px;
+}
+
+.github-project-card {
+    cursor: default;
+}
+
+.github-project-card-loading {
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-repo-visual {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    background:
+        radial-gradient(circle at top right, rgba(255, 107, 107, 0.18), transparent 38%),
+        linear-gradient(135deg, rgba(17, 24, 39, 0.98), rgba(33, 41, 62, 0.94));
+    color: #fff;
+}
+
+.github-repo-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.github-repo-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.github-repo-chip-muted {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.github-repo-mark {
+    width: 54px;
+    height: 54px;
+    margin: 20px 0 10px;
+    color: #fff;
+}
+
+.github-repo-path {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: var(--font-mono);
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.github-project-meta {
+    margin-bottom: 20px;
+}
+
+.github-project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.github-project-actions .btn {
+    min-width: 132px;
+    justify-content: center;
+}
+
 /* ===== Social Media Section ===== */
 .social-media {
     padding: var(--section-padding);
@@ -2040,6 +2132,10 @@ body.theme-dark .compare-handle::after {
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .github-project-actions .btn {
+        width: 100%;
     }
 
     .contact-form {

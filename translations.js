@@ -82,6 +82,23 @@ const translations = {
                 short: "E-commerce phone shop",
                 description: "A fully-featured e-commerce platform for selling phones with shopping cart functionality, product listings, and modern checkout experience.",
                 features: ["Product catalog", "Shopping cart", "Product details", "Responsive design", "E-commerce functionality"]
+            },
+            github: {
+                title: "Live GitHub Repositories",
+                description: "A live feed of public repositories fetched directly from GitHub.",
+                loading: "Loading repositories...",
+                loadingDescription: "Fetching the latest projects from GitHub.",
+                errorTitle: "GitHub feed unavailable",
+                errorDescription: "The repository list could not be loaded right now. You can still browse the profile directly.",
+                emptyTitle: "No public repositories yet",
+                emptyDescription: "Public repositories will appear here automatically once they are available on GitHub.",
+                noDescription: "No description added yet.",
+                noLanguage: "Repository",
+                viewRepo: "View Repo",
+                viewProfile: "View Profile",
+                liveDemo: "Live Demo",
+                stars: "Stars",
+                updated: "Updated"
             }
         },
         socialMedia: {
@@ -247,6 +264,23 @@ steps: {
                 short: "E-ticaret telefon dükkanı",
                 description: "Sepet işlevleri, ürün listeleri ve modern ödeme deneyimi ile telefon satışı için tam özellikli bir e-ticaret platformu.",
                 features: ["Ürün kataloğu", "Alışveriş sepeti", "Ürün detayları", "Duyarlı tasarım", "E-ticaret işlevleri"]
+            },
+            github: {
+                title: "Canli GitHub Depolari",
+                description: "GitHub'dan dogrudan cekilen herkese acik depolarin canli akisi.",
+                loading: "Depolar yukleniyor...",
+                loadingDescription: "GitHub'dan en guncel projeler aliniyor.",
+                errorTitle: "GitHub akisi su an kullanilamiyor",
+                errorDescription: "Depo listesi simdi yuklenemedi. Profili dogrudan inceleyebilirsin.",
+                emptyTitle: "Henuz herkese acik depo yok",
+                emptyDescription: "GitHub'da acik depolar oldugunda burada otomatik olarak gorunecekler.",
+                noDescription: "Henuz aciklama eklenmemis.",
+                noLanguage: "Depo",
+                viewRepo: "Depoyu Gor",
+                viewProfile: "Profili Gor",
+                liveDemo: "Canli Demo",
+                stars: "Yildiz",
+                updated: "Guncellendi"
             }
         },
         socialMedia: {
@@ -412,6 +446,23 @@ steps: {
                 short: "متجر إلكتروني للهواتف",
                 description: "منصة تجارة إلكترونية كاملة لبيع الهواتف مع وظائف سلة التسوق وقوائم المنتجات وتجربة دفع حديثة.",
                 features: ["كتالوج المنتجات", "سلة التسوق", "تفاصيل المنتج", "تصميم متجاوب", "وظائف التجارة الإلكترونية"]
+            },
+            github: {
+                title: "مستودعات GitHub المباشرة",
+                description: "عرض حي للمستودعات العامة المجلوبة مباشرة من GitHub.",
+                loading: "جاري تحميل المستودعات...",
+                loadingDescription: "يتم جلب أحدث المشاريع من GitHub.",
+                errorTitle: "خلل في عرض GitHub",
+                errorDescription: "لم يمكن تحميل قائمة المستودعات الآن. يمكنك مع ذلك تصفح الملف الشخصي مباشرة.",
+                emptyTitle: "لا توجد مستودعات عامة حتى الآن",
+                emptyDescription: "ستظهر المستودعات العامة هنا تلقائياً عندما تتوفر على GitHub.",
+                noDescription: "لم تُضف وصفاً بعد.",
+                noLanguage: "مستودع",
+                viewRepo: "عرض المستودع",
+                viewProfile: "عرض الملف",
+                liveDemo: "عرض مباشر",
+                stars: "النجوم",
+                updated: "آخر تحديث"
             }
         },
         socialMedia: {
@@ -577,6 +628,23 @@ steps: {
                 short: "Dyqan telefonash e-commerce",
                 description: "Dyqan online i plotë për telefona me karrocë blerjesh, katalog produktesh dhe përvojë të qetë blerjeje.",
                 features: ["E-commerce", "Karrocë blerjesh", "Katalog produktesh", "UI i personalizuar", "React"]
+            },
+            github: {
+                title: "Repozitoret Live në GitHub",
+                description: "Një rrjedhë live e depove publike e marrë drejtpërdrejt nga GitHub.",
+                loading: "Po ngarkohen depozitat...",
+                loadingDescription: "Po merren projektet më të fundit nga GitHub.",
+                errorTitle: "Rrjedha e GitHub nuk është e disponueshme",
+                errorDescription: "Lista e depove nuk u ngarkua tani. Mund ta shikosh profilin drejtpërdrejt.",
+                emptyTitle: "Nuk ka ende depo publike",
+                emptyDescription: "Depot publike do të shfaqen këtu automatikisht sapo të jenë të disponueshme në GitHub.",
+                noDescription: "Nuk është shtuar ende përshkrim.",
+                noLanguage: "Depo",
+                viewRepo: "Shiko Repon",
+                viewProfile: "Shiko Profilin",
+                liveDemo: "Demo Live",
+                stars: "Yje",
+                updated: "Përditësuar"
             }
         },
         socialMedia: {
@@ -744,6 +812,23 @@ steps: {
                 short: "E-Commerce Handy-Shop",
                 description: "Vollständiger Online-Shop für Handys mit Warenkorb, Produktkatalog und reibungslosem Einkaufserlebnis.",
                 features: ["E-Commerce", "Warenkorb", "Produktkatalog", "Eigene UI", "React"]
+            },
+            github: {
+                title: "Live-GitHub-Repositories",
+                description: "Ein Live-Feed öffentlicher Repositories, direkt von GitHub geladen.",
+                loading: "Repositories werden geladen...",
+                loadingDescription: "Die neuesten Projekte werden von GitHub abgerufen.",
+                errorTitle: "GitHub-Feed derzeit nicht verfügbar",
+                errorDescription: "Die Repository-Liste konnte gerade nicht geladen werden. Das Profil ist trotzdem direkt erreichbar.",
+                emptyTitle: "Noch keine öffentlichen Repositories",
+                emptyDescription: "Öffentliche Repositories erscheinen hier automatisch, sobald sie auf GitHub verfügbar sind.",
+                noDescription: "Noch keine Beschreibung vorhanden.",
+                noLanguage: "Repository",
+                viewRepo: "Repository ansehen",
+                viewProfile: "Profil ansehen",
+                liveDemo: "Live-Demo",
+                stars: "Sterne",
+                updated: "Aktualisiert"
             }
         },
         socialMedia: {

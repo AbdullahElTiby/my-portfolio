@@ -17,6 +17,7 @@ const botPin = document.getElementById('botPin');
 const botClose = document.getElementById('botClose');
 const botAvatar = document.getElementById('botAvatar');
 const themeToggle = document.getElementById('themeToggle');
+const githubReposGrid = document.getElementById('githubReposGrid');
 
 // ===== State =====
 let currentLang = localStorage.getItem('lang') || 'en';
@@ -32,6 +33,13 @@ let lastSpokenMessage = '';
 let lastSpokenAt = 0;
 let currentBotAudio = null;
 let hasUserInteracted = false;
+const GITHUB_USERNAME = 'AbdullahElTiby';
+const GITHUB_REPOS_ENDPOINT = `https://api.github.com/users/${GITHUB_USERNAME}/repos?sort=updated&per_page=100&type=owner`;
+const githubReposState = {
+    loading: false,
+    error: false,
+    repos: []
+};
 
 const botAudioMap = {
     en: {
@@ -104,6 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initContactForm();
     initBeforeAfterComparisons();
     initSmoothScroll();
+    initGitHubRepos();
 });
 
 // ===== Language System =====
@@ -160,6 +169,7 @@ function updateLanguage(lang) {
     document.body.classList.toggle('rtl', isRtl);
 
     refreshBotLanguage();
+    renderGitHubRepos();
 }
 
 function getNestedValue(obj, path) {
@@ -394,6 +404,146 @@ function closeProjectModal() {
         const iframe = document.getElementById('modalIframe');
         if (iframe) iframe.src = '';
     }, 300);
+}
+
+// ===== GitHub Repositories =====
+async function initGitHubRepos() {
+    if (!githubReposGrid) return;
+
+    githubReposState.loading = true;
+    githubReposState.error = false;
+    renderGitHubRepos();
+
+    try {
+        const response = await fetch(GITHUB_REPOS_ENDPOINT, {
+            headers: {
+                Accept: 'application/vnd.github+json'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`GitHub request failed with ${response.status}`);
+        }
+
+        const repos = await response.json();
+        githubReposState.repos = repos
+            .filter((repo) => !repo.fork)
+            .sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at))
+            .slice(0, 8);
+    } catch (error) {
+        console.error('Failed to fetch GitHub repositories:', error);
+        githubReposState.error = true;
+        githubReposState.repos = [];
+    } finally {
+        githubReposState.loading = false;
+        renderGitHubRepos();
+    }
+}
+
+function renderGitHubRepos() {
+    if (!githubReposGrid) return;
+
+    const repoText = translations[currentLang]?.projects?.github || translations.en.projects.github;
+
+    if (githubReposState.loading) {
+        githubReposGrid.innerHTML = `
+            <article class="project-card github-project-card github-project-card-loading">
+                <div class="project-info">
+                    <h3>${escapeHtml(repoText.loading)}</h3>
+                    <p>${escapeHtml(repoText.loadingDescription)}</p>
+                </div>
+            </article>
+        `;
+        return;
+    }
+
+    if (githubReposState.error) {
+        githubReposGrid.innerHTML = `
+            <article class="project-card github-project-card github-project-card-loading">
+                <div class="project-info">
+                    <h3>${escapeHtml(repoText.errorTitle)}</h3>
+                    <p>${escapeHtml(repoText.errorDescription)}</p>
+                    <a href="https://github.com/${GITHUB_USERNAME}" class="btn btn-outline social-open-btn" target="_blank" rel="noopener noreferrer">${escapeHtml(repoText.viewProfile)}</a>
+                </div>
+            </article>
+        `;
+        return;
+    }
+
+    if (!githubReposState.repos.length) {
+        githubReposGrid.innerHTML = `
+            <article class="project-card github-project-card github-project-card-loading">
+                <div class="project-info">
+                    <h3>${escapeHtml(repoText.emptyTitle)}</h3>
+                    <p>${escapeHtml(repoText.emptyDescription)}</p>
+                </div>
+            </article>
+        `;
+        return;
+    }
+
+    githubReposGrid.innerHTML = githubReposState.repos.map((repo, index) => {
+        const description = repo.description || repoText.noDescription;
+        const language = repo.language || repoText.noLanguage;
+        const homepage = repo.homepage && repo.homepage.trim() ? repo.homepage.trim() : '';
+        const updatedAt = formatRepoDate(repo.updated_at);
+        const stars = Number(repo.stargazers_count || 0);
+
+        return `
+            <article class="project-card github-project-card" style="--reveal-delay:${index * 120}ms">
+                <div class="project-image github-repo-visual">
+                    <div class="github-repo-topline">
+                        <span class="github-repo-chip">GitHub</span>
+                        <span class="github-repo-chip github-repo-chip-muted">${escapeHtml(repo.visibility || 'public')}</span>
+                    </div>
+                    <svg class="github-repo-mark" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+                    </svg>
+                    <p class="github-repo-path">${escapeHtml(`${GITHUB_USERNAME}/${repo.name}`)}</p>
+                </div>
+                <div class="project-info">
+                    <h3>${escapeHtml(repo.name)}</h3>
+                    <p>${escapeHtml(description)}</p>
+                    <div class="project-tags github-project-meta">
+                        <span>${escapeHtml(language)}</span>
+                        <span>${escapeHtml(`${repoText.stars}: ${stars}`)}</span>
+                        <span>${escapeHtml(`${repoText.updated}: ${updatedAt}`)}</span>
+                    </div>
+                    <div class="github-project-actions">
+                        <a href="${escapeAttribute(repo.html_url)}" target="_blank" rel="noopener noreferrer" class="btn btn-outline social-open-btn">${escapeHtml(repoText.viewRepo)}</a>
+                        ${homepage ? `<a href="${escapeAttribute(homepage)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary social-open-btn">${escapeHtml(repoText.liveDemo)}</a>` : ''}
+                    </div>
+                </div>
+            </article>
+        `;
+    }).join('');
+}
+
+function formatRepoDate(dateString) {
+    if (!dateString) return '';
+
+    try {
+        return new Intl.DateTimeFormat(currentLang, {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        }).format(new Date(dateString));
+    } catch (error) {
+        return new Date(dateString).toLocaleDateString();
+    }
+}
+
+function escapeHtml(value) {
+    return String(value)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
+function escapeAttribute(value) {
+    return escapeHtml(value);
 }
 
 // ===== Site Bot =====

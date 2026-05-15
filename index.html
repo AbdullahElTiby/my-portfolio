@@ -392,6 +392,22 @@
                     </div>
                 </div>
             </div>
+            <div class="github-projects-section animate-on-scroll">
+                <div class="github-projects-copy">
+                    <h3 class="projects-subtitle" data-i18n="projects.github.title">Live GitHub Repositories</h3>
+                    <p class="section-intro github-projects-intro" data-i18n="projects.github.description">
+                        A live feed of public repositories fetched directly from GitHub.
+                    </p>
+                </div>
+                <div class="projects-grid github-projects-grid" id="githubReposGrid" aria-live="polite">
+                    <article class="project-card github-project-card github-project-card-loading">
+                        <div class="project-info">
+                            <h3 data-i18n="projects.github.loading">Loading repositories...</h3>
+                            <p data-i18n="projects.github.loadingDescription">Fetching the latest projects from GitHub.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </div>
     </section>
 
