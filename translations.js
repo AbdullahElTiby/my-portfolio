@@ -72,12 +72,18 @@ const translations = {
                 features: ["Healthcare-focused layout", "Clear service sections", "Professional visual identity", "Mobile responsive experience", "Fast and accessible browsing"]
             },
             project6: {
+                title: "Flexy Grup Saglik",
+                short: "Healthcare group website",
+                description: "A polished corporate healthcare website for Flexy Grup Saglik built to present services clearly and support trust with a professional visual identity.",
+                features: ["Corporate healthcare design", "Clear service presentation", "Responsive business layout", "Professional brand feel", "Accessible browsing"]
+            },
+            project7: {
                 title: "BitChat",
                 short: "AI-powered messaging platform",
                 description: "An AI-powered messaging platform with real-time chat capabilities, intelligent responses, and a modern user interface.",
                 features: ["AI integration", "Real-time messaging", "Modern UI", "Responsive design", "Fast performance"]
             },
-            project7: {
+            project8: {
                 title: "Phone Store",
                 short: "E-commerce phone shop",
                 description: "A fully-featured e-commerce platform for selling phones with shopping cart functionality, product listings, and modern checkout experience.",
@@ -254,12 +260,18 @@ steps: {
                 features: ["Sağlık odaklı yerleşim", "Net hizmet bölümleri", "Profesyonel görsel kimlik", "Mobil uyumlu deneyim", "Hızlı ve erişilebilir gezinme"]
             },
             project6: {
+                title: "Flexy Grup Saglik",
+                short: "Saglik grubu web sitesi",
+                description: "Flexy Grup Saglik için hizmetleri net anlatan ve güven veren profesyonel görsel kimliğe sahip kurumsal bir sağlık web sitesi.",
+                features: ["Kurumsal saglik tasarimi", "Net hizmet sunumu", "Duyarli is yerlesimi", "Profesyonel marka hissi", "Erisilebilir gezinme"]
+            },
+            project7: {
                 title: "BitChat",
                 short: "Yapay zeka destekli mesajlaşma platformu",
                 description: "Gerçek zamanlı mesajlaşma yetenekleri, akıllı yanıtlar ve modern kullanıcı arayüzüne sahip yapay zeka destekli bir mesajlaşma platformu.",
                 features: ["Yapay zeka entegrasyonu", "Gerçek zamanlı mesajlaşma", "Modern arayüz", "Duyarlı tasarım", "Hızlı performans"]
             },
-            project7: {
+            project8: {
                 title: "Telefon Mağazası",
                 short: "E-ticaret telefon dükkanı",
                 description: "Sepet işlevleri, ürün listeleri ve modern ödeme deneyimi ile telefon satışı için tam özellikli bir e-ticaret platformu.",
@@ -436,12 +448,18 @@ steps: {
                 features: ["تنظيم واضح", "واجهة احترافية", "متجاوب", "تنقل سهل", "تجربة موثوقة"]
             },
             project6: {
+                title: "Flexy Grup Saglik",
+                short: "موقع مجموعة صحية",
+                description: "موقع مؤسسي احترافي لمجموعة Flexy Grup Saglik يركز على عرض الخدمات الطبية بوضوح وبهوية بصرية موثوقة.",
+                features: ["تصميم صحي مؤسسي", "عرض خدمات واضح", "واجهة أعمال متجاوبة", "هوية احترافية", "تصفح سهل"]
+            },
+            project7: {
                 title: "BitChat",
                 short: "منصة رسائل مدعومة بالذكاء الاصطناعي",
                 description: "منصة رسائل ذكية مع قدرات الدردشة الفورية وواجهة مستخدم حديثة.",
                 features: ["تكامل الذكاء الاصطناعي", "الرسائل الفورية", "واجهة حديثة", "تصميم متجاوب", "أداء سريع"]
             },
-            project7: {
+            project8: {
                 title: "متجر الهواتف",
                 short: "متجر إلكتروني للهواتف",
                 description: "منصة تجارة إلكترونية كاملة لبيع الهواتف مع وظائف سلة التسوق وقوائم المنتجات وتجربة دفع حديثة.",
@@ -618,12 +636,18 @@ steps: {
                 features: ["Katalog produktesh", "Gjurmim porosish", "Shumëgjuhësh", "Dizajn i përgjegjshëm", "Faqe biznesi"]
             },
             project6: {
+                title: "Flexy Grup Saglik",
+                short: "Faqja e grupit shëndetësor",
+                description: "Një faqe korporative profesionale për Flexy Grup Saglik që paraqet shërbimet qartë dhe krijon besim me identitet të fortë vizual.",
+                features: ["Dizajn korporativ shëndetësor", "Prezantim i qartë i shërbimeve", "Strukturë responsive biznesi", "Identitet profesional", "Navigim i lehtë"]
+            },
+            project7: {
                 title: "BitChat",
                 short: "Platformë mesazhesh me AI",
                 description: "Platformë moderne mesazhesh e fuqizuar nga AI me biseda në kohë reale dhe dizajn të pastër.",
                 features: ["Integrim AI", "Bisedë në kohë reale", "Dizajn modern", "Mesazhe inteligjente", "React"]
             },
-            project7: {
+            project8: {
                 title: "Phone Store",
                 short: "Dyqan telefonash e-commerce",
                 description: "Dyqan online i plotë për telefona me karrocë blerjesh, katalog produktesh dhe përvojë të qetë blerjeje.",
@@ -802,12 +826,18 @@ steps: {
                 features: ["Produktkatalog", "Bestellverfolgung", "Mehrsprachig", "Responsives Design", "Business-Website"]
             },
             project6: {
+                title: "Flexy Grup Saglik",
+                short: "Website einer Gesundheitsgruppe",
+                description: "Eine professionelle Unternehmenswebsite für Flexy Grup Saglik mit klarem Leistungsaufbau und vertrauenswürdiger visueller Identität.",
+                features: ["Unternehmensdesign im Gesundheitsbereich", "Klare Leistungsdarstellung", "Responsives Business-Layout", "Professionelle Markenwirkung", "Barrierearmes Browsing"]
+            },
+            project7: {
                 title: "BitChat",
                 short: "KI-gestützte Messaging-Plattform",
                 description: "Moderne KI-gestützte Messaging-Plattform mit Echtzeit-Chat, intelligenten Funktionen und sauberem Design.",
                 features: ["KI-Integration", "Echtzeit-Chat", "Modernes Design", "Intelligente Nachrichten", "React"]
             },
-            project7: {
+            project8: {
                 title: "Phone Store",
                 short: "E-Commerce Handy-Shop",
                 description: "Vollständiger Online-Shop für Handys mit Warenkorb, Produktkatalog und reibungslosem Einkaufserlebnis.",
@@ -941,14 +971,19 @@ const projectsData = {
     5: {
         gradient: "linear-gradient(135deg, #0ea5a4 0%, #0f766e 100%)",
         tech: ["Healthcare", "Responsive Design", "Business Website"],
-        demoUrl: "https://flexygrupsaglik.com/"
+        demoUrl: "https://flexymedical.com"
     },
     6: {
+        gradient: "linear-gradient(135deg, #14b8a6 0%, #115e59 100%)",
+        tech: ["Healthcare", "Corporate Website", "Responsive Design"],
+        demoUrl: "https://flexygrupsaglik.com/"
+    },
+    7: {
         gradient: "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
         tech: ["React", "AI Integration", "Real-time Chat"],
         demoUrl: "https://bitchat-demo.netlify.app/"
     },
-    7: {
+    8: {
         gradient: "linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%)",
         tech: ["React", "E-commerce", "Shopping Cart"],
         demoUrl: "https://phone-store-by-abdullaheltiby.surge.sh/"
