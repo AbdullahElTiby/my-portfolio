@@ -941,7 +941,7 @@ const projectsData = {
     5: {
         gradient: "linear-gradient(135deg, #0ea5a4 0%, #0f766e 100%)",
         tech: ["Healthcare", "Responsive Design", "Business Website"],
-        demoUrl: "https://flexymedical.com"
+        demoUrl: "https://flexygrupsaglik.com/"
     },
     6: {
         gradient: "linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)",
